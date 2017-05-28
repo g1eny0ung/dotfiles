@@ -1,0 +1,11 @@
+{
+  "indent_size": 2,
+  "html": {
+    "end_with_newline": true,
+    "indent_inner_html": true,
+    "indent_size": 2
+  },
+  "css": {
+    "indent_size": 2
+  }
+}

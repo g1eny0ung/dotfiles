@@ -4,3 +4,4 @@ My dotfiles, include:
 
 - spacemacs
 - idea-vim
+- js-beautify
