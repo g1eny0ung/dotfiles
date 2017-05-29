@@ -5,3 +5,4 @@ My dotfiles, include:
 - spacemacs
 - idea-vim
 - js-beautify
+- zsh(oh-my-zsh)
