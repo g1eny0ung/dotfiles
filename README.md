@@ -3,6 +3,7 @@
 My dotfiles, include:
 
 - spacemacs
+- neovim
 - idea-vim
 - js-beautify
 - zsh(oh-my-zsh)
