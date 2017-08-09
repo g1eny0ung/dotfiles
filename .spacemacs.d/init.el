@@ -325,7 +325,6 @@ you should place your code here."
   (setq-default evil-escape-delay 0.5)
   (push "~/.spacemacs.d/helper" load-path)
   (require 'auto-save)
-  (setq auto-save-idle 3)
   (setq auto-save-slient t)
   (auto-save-enable)
   (setq-default js2-basic-offset 2)

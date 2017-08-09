@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/work/go:$HOME/go
-export PATH=$GOPATH/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
 
  #Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -47,7 +47,7 @@ export UPDATE_ZSH_DAYS=10
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=".g1eny0ung-oh-my-zsh"
+ZSH_CUSTOM=".custom-zsh"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -88,10 +88,11 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias vim="nvim"
 
+export NODE_ENV="development"
+
+export GPG_TTY=$(tty)
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/g1eny0ung/.sdkman"
 [[ -s "/Users/g1eny0ung/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/g1eny0ung/.sdkman/bin/sdkman-init.sh"
 
-export NODE_ENV="development"
-
-export GPG_TTY=$(tty)
