@@ -1,2 +1,2 @@
 .DS_Store
-.config/configstore/update-notifier-npm.json
+.config/configstore/*
