@@ -57,9 +57,6 @@ values."
               clojure-enable-fancify-symbols t)
      javascript
      html
-     (haskell :variables
-              haskell-completion-backend 'intero
-              haskell-enable-hindent-style "johan-tibell")
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -326,12 +323,15 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq-default evil-escape-key-sequence "jk")
   (setq-default evil-escape-delay 0.5)
+
   (push "~/.spacemacs.d/helper" load-path)
   (require 'auto-save)
   (setq auto-save-slient t)
   (auto-save-enable)
+
   (setq-default js2-basic-offset 2)
   (setq-default js2-indent-level 2)
+
   (global-evil-mc-mode 1)
   )
 
@@ -344,7 +344,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (evil-escape highlight-parentheses highlight-numbers evil-nerd-commenter packed intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode info+ auto-compile google-translate evil-matchit highlight restart-emacs hl-todo helm-projectile evil-ediff evil-search-highlight-persist ace-link expand-region evil-exchange web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc company-tern dash-functional tern coffee-mode neotree highlight-indentation exec-path-from-shell evil-mc helm-make persp-mode dumb-jump smartparens evil projectile helm helm-core diminish rainbow-mode rainbow-identifiers color-identifiers-mode yaml-mode sql-indent smeargle reveal-in-osx-finder pbcopy osx-trash osx-dictionary orgit mmm-mode markdown-toc markdown-mode magit-gitflow launchctl helm-gitignore helm-dash gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md flycheck-pos-tip flycheck evil-magit magit magit-popup git-commit with-editor diff-hl dash-at-point clojure-snippets clj-refactor inflections edn multiple-cursors paredit peg cider-eval-sexp-fu cider seq queue clojure-mode company-quickhelp pos-tip helm-company helm-c-yasnippet fuzzy company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete spaceline ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org powerline undo-tree hydra async aggressive-indent adaptive-wrap ace-window avy org-plus-contrib evil-unimpaired f s dash))))
+    (column-enforce-mode rainbow-delimiters link-hint helm-swoop evil-surround clean-aindent-mode iedit goto-chg evil-escape highlight-parentheses highlight-numbers evil-nerd-commenter packed intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode info+ auto-compile google-translate evil-matchit highlight restart-emacs hl-todo helm-projectile evil-ediff evil-search-highlight-persist ace-link expand-region evil-exchange web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc company-tern dash-functional tern coffee-mode neotree highlight-indentation exec-path-from-shell evil-mc helm-make persp-mode dumb-jump smartparens evil projectile helm helm-core diminish rainbow-mode rainbow-identifiers color-identifiers-mode yaml-mode sql-indent smeargle reveal-in-osx-finder pbcopy osx-trash osx-dictionary orgit mmm-mode markdown-toc markdown-mode magit-gitflow launchctl helm-gitignore helm-dash gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md flycheck-pos-tip flycheck evil-magit magit magit-popup git-commit with-editor diff-hl dash-at-point clojure-snippets clj-refactor inflections edn multiple-cursors paredit peg cider-eval-sexp-fu cider seq queue clojure-mode company-quickhelp pos-tip helm-company helm-c-yasnippet fuzzy company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete spaceline ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org powerline undo-tree hydra async aggressive-indent adaptive-wrap ace-window avy org-plus-contrib evil-unimpaired f s dash))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
