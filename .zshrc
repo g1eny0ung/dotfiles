@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GOPATH=$HOME/go:$HOME/Work/go:$HOME/Work/demo/go
+export GOPATH=$HOME/go:$HOME/Work/go
 export PATH=$HOME/go/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
 
  #Path to your oh-my-zsh installation.
