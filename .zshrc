@@ -88,8 +88,6 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias vim="nvim"
 
-export NODE_ENV="development"
-
 export GPG_TTY=$(tty)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
