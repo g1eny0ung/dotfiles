@@ -2,3 +2,4 @@
 .config/configstore/*
 .config/gocode/*
 .config/nvim/.netrwhist
+.config/filezilla/*
