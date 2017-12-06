@@ -1,4 +1,4 @@
-# G1enY0ung's dotfiles
+# dotfiles
 
 My dotfiles, include:
 
