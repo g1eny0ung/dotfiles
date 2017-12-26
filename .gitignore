@@ -3,3 +3,4 @@
 .config/gocode/*
 .config/nvim/.netrwhist
 .config/filezilla/*
+.config/yarn/*
