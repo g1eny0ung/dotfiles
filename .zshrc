@@ -92,9 +92,5 @@ alias disproxy="unset http_proxy https_proxy"
 
 export GPG_TTY=$(tty)
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/g1eny0ung/.sdkman"
-[[ -s "/Users/g1eny0ung/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/g1eny0ung/.sdkman/bin/sdkman-init.sh"
-
 # sqlite3 last version
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
