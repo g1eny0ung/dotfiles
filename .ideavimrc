@@ -1,1 +1,6 @@
 inoremap jk <ESC>
+
+set surround
+
+set number
+set relativenumber

@@ -9,6 +9,7 @@ nnoremap <leader>q :q<CR>
 
 iabbrev @@ g1enyy0ung@gmail.com
 
+set number
 set relativenumber
 set numberwidth=1
 set shiftround
