@@ -18,5 +18,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
+Plug 'elzr/vim-json'
 
 call plug#end()
