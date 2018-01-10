@@ -6,3 +6,4 @@ My dotfiles, include:
 - neovim
 - idea-vim
 - zsh(oh-my-zsh)
+- js-beautify
