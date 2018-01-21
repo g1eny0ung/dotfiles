@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GOPATH=$HOME/go:$HOME/work/go
+export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
 
  #Path to your oh-my-zsh installation.
@@ -89,6 +89,10 @@ alias vi="nvim"
 alias vim="nvim"
 alias goproxy="export http_proxy=http://127.0.0.1:50117 https_proxy=http://127.0.0.1:50117"
 alias disproxy="unset http_proxy https_proxy"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+		--cache=$HOME/.npm/.cache/cnpm \
+		--disturl=https://npm.taobao.org/dist \
+		--userconfig=$HOME/.cnpmrc"
 
 export GPG_TTY=$(tty)
 
