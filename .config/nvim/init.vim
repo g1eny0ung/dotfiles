@@ -14,6 +14,8 @@ set relativenumber
 set numberwidth=1
 set shiftround
 
+set background=dark
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'

@@ -2,6 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
+export GPG_TTY=$(tty)
+# sqlite3 last version
+export PATH=/usr/local/opt/sqlite/bin:$PATH
 
  #Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -93,8 +96,6 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--cache=$HOME/.npm/.cache/cnpm \
 		--disturl=https://npm.taobao.org/dist \
 		--userconfig=$HOME/.cnpmrc"
+alias brew_UG="brew update && brew upgrade && brew cask upgrade"
+alias pyHTTPServer="python -m SimpleHTTPServer"
 
-export GPG_TTY=$(tty)
-
-# sqlite3 last version
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
