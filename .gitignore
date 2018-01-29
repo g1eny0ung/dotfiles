@@ -1,6 +1,5 @@
 .DS_Store
-.config/configstore/*
-.config/gocode/*
+
+.config
+!.config/nvim
 .config/nvim/.netrwhist
-.config/filezilla/*
-.config/yarn/*
