@@ -27,7 +27,7 @@ values."
    ;; If non-nil layers with lazy install support are lazy installed.
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
-   dotspacemacs-configuration-layer-path '()
+   dotspacemacs-configuration-layer-path '("~/.spacemacs.d/layers/")
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
@@ -38,16 +38,17 @@ values."
      ;; ----------------------------------------------------------------
      ivy
      (auto-completion :variables
-                      auto-completion-enable-help-tooltip t)
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-enable-snippets-in-popup t
+                      :disabled-for
+                      org
+                      git)
      better-defaults
      emacs-lisp
      git
      (markdown :variables
                markdown-live-preview-engine 'vmd)
      org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
      spell-checking
      syntax-checking
      (version-control :variables
@@ -55,20 +56,31 @@ values."
      (colors :variables
              colors-colorize-identifiers 'all
              colors-enable-nyan-cat-progress-bar t)
+     (wakatime :variables
+               wakatime-cli-path "/usr/local/bin/wakatime")
+     dash
+
      ;; languages
      html
      javascript
+     react
      typescript
      (clojure :variables
               clojure-enable-fancify-symbols t)
      (haskell :variables
               haskell-completion-backend 'intero)
+     ruby
+
+     ;; personal
+     hack-real-auto-save
+     hack-prettier
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(editorconfig
+                                      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -141,7 +153,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light)
+                         )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
@@ -333,11 +345,37 @@ you should place your code here."
   ;; Hook hungry on programming mode
   (add-hook 'prog-mode-hook 'spacemacs/toggle-hungry-delete-on)
 
-  ;; javascript layer specified
+  ;; js2-mode specified
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
-  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-jsx-mode))
   (setq-default js2-strict-missing-semi-warning nil)
+
+  ;; web-mode specified
+  (setq-default css-indent-offset 2
+                web-mode-markup-indent-offset 2
+                web-mode-css-indent-offset 2
+                web-mode-code-indent-offset 2)
+
+  ;; evil-escape specified
+  (setq-default evil-escape-key-sequence "jk")
+  (setq-default evil-escape-delay 0.2)
+
+  ;; Extra yas-minor-mode-map kbd
+  (define-key yas-minor-mode-map (kbd "s-/") 'yas-expand)
+
+  ;; editorconfig
+  (editorconfig-mode 1)
+
+  ;; powerline specified
+  (setq powerline-default-separator 'nil)
+
+  ;; centered-cursor-mode enabled
+  (global-centered-cursor-mode 1)
+
+  ;; Fixed auto paste when first open recent file
+  (add-hook 'spacemacs-buffer-mode-hook
+            (lambda ()
+              (set (make-local-variable 'mouse-1-click-follows-link) nil)))
   )
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
