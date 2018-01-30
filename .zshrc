@@ -2,7 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
-export GPG_TTY=$(tty)
 # sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 
@@ -98,4 +97,6 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--userconfig=$HOME/.cnpmrc"
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
 alias pyHTTPServer="python -m SimpleHTTPServer"
+
+export GPG_TTY=$(tty)
 
