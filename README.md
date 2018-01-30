@@ -2,11 +2,11 @@
 
 My dotfiles :satisfied: :heart: :see_no_evil: , include:
 
-- [spacemacs](###spacemacs)
-- [neovim](###neovim)
-- [ideavim](###ideavim)
-- [zsh (oh-my-zsh)](###zsh (oh-my-zsh))
-- [prettier](###prettier)
+- [spacemacs](#spacemacs)
+- [neovim](#neovim)
+- [ideavim](#ideavim)
+- [zsh (oh-my-zsh)](#zsh-oh-my-zsh)
+- [prettier](#prettier)
 
 Keeping updates.
 

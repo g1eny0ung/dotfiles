@@ -87,10 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# neovim
 alias vi="nvim"
 alias vim="nvim"
+# lantern proxy
 alias goproxy="export http_proxy=http://127.0.0.1:50117 https_proxy=http://127.0.0.1:50117"
 alias disproxy="unset http_proxy https_proxy"
+# taobao npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--cache=$HOME/.npm/.cache/cnpm \
 		--disturl=https://npm.taobao.org/dist \
