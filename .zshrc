@@ -99,6 +99,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--disturl=https://npm.taobao.org/dist \
 		--userconfig=$HOME/.cnpmrc"
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
+alias brew_CL="brew cleanup && brew cask cleanup"
 alias pyHTTPServer="python -m SimpleHTTPServer"
 
 export GPG_TTY=$(tty)
