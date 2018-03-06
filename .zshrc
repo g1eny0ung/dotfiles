@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/work/gocode
-export PATH=$HOME/go/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/work/gocode/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
 # sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 
@@ -100,7 +100,8 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--userconfig=$HOME/.cnpmrc"
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
 alias brew_CL="brew cleanup && brew cask cleanup"
-alias pyHTTPServer="python -m SimpleHTTPServer"
+alias pyHTTPServer="python3 -m http.server"
+alias sourcezshrc="source ~/.zshrc"
 
 export GPG_TTY=$(tty)
 
