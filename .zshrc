@@ -93,6 +93,8 @@ alias vim="nvim"
 # lantern proxy
 alias goproxy="export http_proxy=http://127.0.0.1:50117 https_proxy=http://127.0.0.1:50117"
 alias disproxy="unset http_proxy https_proxy"
+alias shareproxy="/Applications/Lantern.app/Contents/MacOS/lantern -addr 0.0.0.0:50117"
+alias disshareproxy="/Applications/Lantern.app/Contents/MacOS/lantern -addr 127.0.0.1:50117"
 # taobao npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--cache=$HOME/.npm/.cache/cnpm \
