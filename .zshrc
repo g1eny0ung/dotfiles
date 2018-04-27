@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GOPATH=$HOME/golang
-export PATH=$HOME/work/gocode/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/golang/bin:$HOME/.local/bin:$PATH
 # sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 
