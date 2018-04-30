@@ -104,6 +104,7 @@ alias brew_UG="brew update && brew upgrade && brew cask upgrade"
 alias brew_CL="brew cleanup && brew cask cleanup"
 alias pyHTTPServer="python3 -m http.server"
 alias sourcezshrc="source ~/.zshrc"
+alias ghci="stack ghci"
 
 export GPG_TTY=$(tty)
 
