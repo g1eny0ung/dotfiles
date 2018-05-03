@@ -70,6 +70,7 @@ values."
               clojure-enable-fancify-symbols t)
      (haskell :variables
               haskell-completion-backend 'intero)
+     rust
      ruby
 
      ;; personal
