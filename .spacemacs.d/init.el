@@ -49,7 +49,6 @@ values."
      (markdown :variables
                markdown-live-preview-engine 'vmd)
      org
-     spell-checking
      syntax-checking
      (version-control :variables
                       version-control-diff-tool 'diff-hl)
