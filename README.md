@@ -67,8 +67,8 @@ Summary:
 - PATH
 
   ```shell
-  export GOPATH=$HOME/go
-  export PATH=$HOME/go/bin:$HOME/Library/Haskell/bin:$HOME/.local/bin:$PATH
+  export GOPATH=$HOME/golang
+  export PATH=$HOME/golang/bin:$HOME/.local/bin:$PATH
   # sqlite3 last version
   export PATH=/usr/local/opt/sqlite/bin:$PATH
   ```
@@ -89,6 +89,11 @@ Summary:
                   --userconfig=$HOME/.cnpmrc"
   alias brew_UG="brew update && brew upgrade && brew cask upgrade"
   alias pyHTTPServer="python -m SimpleHTTPServer"
+  alias brew_CL="brew cleanup && brew cask cleanup"
+  alias py_HTTP_Server="python3 -m http.server"
+  alias source_zshrc="source ~/.zshrc"
+  alias ghci="stack ghci"
+  alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
   ```
 
 - Plugins

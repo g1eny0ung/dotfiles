@@ -93,8 +93,6 @@ alias vim="nvim"
 # lantern proxy
 alias goproxy="export http_proxy=http://127.0.0.1:50117 https_proxy=http://127.0.0.1:50117"
 alias disproxy="unset http_proxy https_proxy"
-alias shareproxy="/Applications/Lantern.app/Contents/MacOS/lantern -addr 192.168.31.191:8787"
-alias disshareproxy="/Applications/Lantern.app/Contents/MacOS/lantern -addr 127.0.0.1:50117"
 # taobao npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--cache=$HOME/.npm/.cache/cnpm \
@@ -102,9 +100,10 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--userconfig=$HOME/.cnpmrc"
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
 alias brew_CL="brew cleanup && brew cask cleanup"
-alias pyHTTPServer="python3 -m http.server"
-alias sourcezshrc="source ~/.zshrc"
+alias py_HTTP_Server="python3 -m http.server"
+alias source_zshrc="source ~/.zshrc"
 alias ghci="stack ghci"
+alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
 
 export GPG_TTY=$(tty)
 
