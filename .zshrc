@@ -99,6 +99,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--disturl=https://npm.taobao.org/dist \
 		--userconfig=$HOME/.cnpmrc"
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
+alias brew_UG_GREEDY="brew update && brew upgrade --greedy && brew cask upgrade --greedy"
 alias brew_CL="brew cleanup && brew cask cleanup"
 alias py_HTTP_Server="python3 -m http.server"
 alias source_zshrc="source ~/.zshrc"
