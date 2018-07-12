@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GOPATH=$HOME/golang:$HOME/company/golang
+export GOPATH=$HOME/golang
 export GOBIN=$HOME/golang/bin
 export PATH=$HOME/golang/bin:$HOME/.local/bin:$PATH
 # sqlite3 last version
