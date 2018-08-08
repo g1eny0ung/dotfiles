@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GOPATH=$HOME/golang
-export GOBIN=$HOME/golang/bin
-export PATH=$HOME/golang/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 # sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 
@@ -106,11 +104,13 @@ alias py_HTTP_Server="python3 -m http.server"
 alias source_zshrc="source ~/.zshrc"
 alias ghci="stack ghci"
 alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
+alias swift="PATH=/usr/bin:$PATH swift"
 
 export GPG_TTY=$(tty)
 
 export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
 export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"
+export PUPPETEER_DOWNLOAD_HOST="https://npm.taobao.org/mirrors"
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
