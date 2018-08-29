@@ -371,9 +371,6 @@ you should place your code here."
   ;; powerline specified
   (setq powerline-default-separator 'nil)
 
-  ;; centered-cursor-mode enabled
-  (global-centered-cursor-mode 1)
-
   ;; Fixed auto paste when first open recent file
   (add-hook 'spacemacs-buffer-mode-hook
             (lambda ()
