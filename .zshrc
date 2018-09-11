@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
 # sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 
@@ -54,7 +55,7 @@ ZSH_CUSTOM=".custom-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions)
+plugins=(git mercurial z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
