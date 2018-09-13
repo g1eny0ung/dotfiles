@@ -4,7 +4,6 @@ My dotfiles :satisfied: :heart: :see_no_evil: , include:
 
 - [spacemacs](#spacemacs)
 - [neovim](#neovim)
-- [ideavim](#ideavim)
 - [zsh (oh-my-zsh)](#zsh-oh-my-zsh)
 - [prettier](#prettier)
 
@@ -45,20 +44,6 @@ Summary:
   - [vim-airline](https://github.com/vim-airline/vim-airline)
   - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
   - [vim-json](https://github.com/elzr/vim-json)
-
-### ideavim
-
-Summary:
-
-```shell
-inoremap jk <ESC>
-vnoremap jk <ESC>
-
-set surround
-
-set number
-set relativenumber
-```
 
 ### zsh (oh-my-zsh)
 

@@ -1,7 +1,0 @@
-inoremap jk <ESC>
-vnoremap jk <ESC>
-
-set surround
-
-set number
-set relativenumber
