@@ -26,8 +26,9 @@ Summary:
 - All used layers in `dotspacemacs-configuration-layers`, `SPC s s` to find it.
 - All custom configurations in `dotspacemacs/user-init` and `dotspacemacs/user-config`, `SPC s s` to find it.
 - Custom layers (in `.spacemacs.d/layers`)
-  - Hack-real-auto-save
-  - Hack-prettier
+  - hack-real-auto-save
+  - hack-prettier
+  - hack-cider
 
 ### neovim
 
@@ -52,8 +53,8 @@ Summary:
 - PATH
 
   ```shell
-  export GOPATH=$HOME/golang
-  export PATH=$HOME/golang/bin:$HOME/.local/bin:$PATH
+  export PATH=$HOME/.local/bin:$PATH
+  export PATH=$HOME/go/bin:$PATH
   # sqlite3 last version
   export PATH=/usr/local/opt/sqlite/bin:$PATH
   ```
@@ -72,13 +73,19 @@ Summary:
                   --cache=$HOME/.npm/.cache/cnpm \
                   --disturl=https://npm.taobao.org/dist \
                   --userconfig=$HOME/.cnpmrc"
+  # homebrew
   alias brew_UG="brew update && brew upgrade && brew cask upgrade"
-  alias pyHTTPServer="python -m SimpleHTTPServer"
-  alias brew_CL="brew cleanup && brew cask cleanup"
+  alias brew_UG_GREEDY="brew update && brew upgrade --greedy && brew cask upgrade --greedy"
+  alias brew_CL="brew cleanup"
+  # py simple http server
   alias py_HTTP_Server="python3 -m http.server"
   alias source_zshrc="source ~/.zshrc"
+  # ghci
   alias ghci="stack ghci"
+  # nginx
   alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
+  # swift
+  alias swift="PATH=/usr/bin:$PATH swift"
   ```
 
 - Plugins
