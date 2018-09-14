@@ -5,7 +5,7 @@ export PATH=$HOME/go/bin:$PATH
 # sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 
- #Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
