@@ -63,14 +63,10 @@ values."
      ;; languages
      html
      javascript
-     react
-     typescript
      (clojure :variables
               clojure-enable-fancify-symbols t)
      (haskell :variables
               haskell-completion-backend 'intero)
-     rust
-     ruby
 
      ;; personal
      hack-real-auto-save

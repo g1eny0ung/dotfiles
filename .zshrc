@@ -113,8 +113,6 @@ export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
 export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"
 export PUPPETEER_DOWNLOAD_HOST="https://npm.taobao.org/mirrors"
 
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
-
 # bash_completion_script
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
