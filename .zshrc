@@ -109,6 +109,7 @@ alias source_zshrc="source ~/.zshrc"
 alias ghci="stack ghci"
 alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
 alias swift="PATH=/usr/bin:$PATH swift"
+alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
 
 export GPG_TTY=$(tty)
 
