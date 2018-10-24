@@ -53,10 +53,12 @@ Summary:
 - PATH
 
   ```shell
+  # Haskell bin
   export PATH=$HOME/.local/bin:$PATH
-  export PATH=$HOME/go/bin:$PATH
   # sqlite3 last version
   export PATH=/usr/local/opt/sqlite/bin:$PATH
+  # python3 default
+  export PATH=/usr/local/opt/python/libexec/bin:$PATH
   ```
 
 - Alias
@@ -79,6 +81,7 @@ Summary:
   alias brew_CL="brew cleanup"
   # py simple http server
   alias py_HTTP_Server="python3 -m http.server"
+  alias php_HTTP_Server="php -S localhost:8000"
   alias source_zshrc="source ~/.zshrc"
   # ghci
   alias ghci="stack ghci"
@@ -86,6 +89,7 @@ Summary:
   alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
   # swift
   alias swift="PATH=/usr/bin:$PATH swift"
+  alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
   ```
 
 - Plugins
