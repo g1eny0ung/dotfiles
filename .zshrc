@@ -7,6 +7,8 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 # python3 default
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
+# ruby default
+export PATH=/usr/local/opt/ruby/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
