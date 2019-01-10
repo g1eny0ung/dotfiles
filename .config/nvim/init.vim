@@ -23,3 +23,4 @@ Plug 'airblade/vim-gitgutter'
 Plug 'elzr/vim-json'
 
 call plug#end()
+
