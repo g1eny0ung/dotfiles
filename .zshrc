@@ -114,6 +114,7 @@ alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/et
 alias swift="PATH=/usr/bin:$PATH swift"
 alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
 alias git="LANG=\"en_US.UTF-8\" git"
+alias UP="git add . && git commit -m \"Up\" && git push origin master"
 
 export GPG_TTY=$(tty)
 
