@@ -40,9 +40,7 @@ values."
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-snippets-in-popup t
-                      :disabled-for
-                      org
-                      git)
+                      :disabled-for org git)
      better-defaults
      emacs-lisp
      git
@@ -65,24 +63,21 @@ values."
      javascript
      (clojure :variables
               clojure-enable-fancify-symbols t)
-     (haskell :variables
-              haskell-completion-backend 'intero)
 
      ;; personal
-     hack-real-auto-save
-     hack-prettier
      hack-cider
+     hack-prettier
+     hack-real-auto-save
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(editorconfig
-                                      )
+   dotspacemacs-additional-packages '()
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(web-beautify)
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
    ;; `used-only' installs only explicitly used packages and uninstall any
@@ -360,9 +355,6 @@ you should place your code here."
 
   ;; Extra yas-minor-mode-map kbd
   (define-key yas-minor-mode-map (kbd "s-/") 'yas-expand)
-
-  ;; editorconfig
-  (editorconfig-mode 1)
 
   ;; powerline specified
   (setq powerline-default-separator 'nil)

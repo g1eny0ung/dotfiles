@@ -29,23 +29,29 @@
 
 ;;; Code:
 
-(defconst hack-prettier-packages '(prettier-js web-beautify))
+(defconst hack-prettier-packages '(prettier-js web-mode css-mode js2-mode json-mode))
 
-(defun hack-prettier/init-prettier-js ()
+(defun hack-prettier/post-init-prettier-js ()
   (use-package prettier-js-mode
-    :hook (js2-mode web-mode)
-    ))
+    :hook (web-mode
+           js2-mode
+           css-mode
+           json-mode)))
 
-(defun hack-prettier/post-init-web-beautify ()
-  (with-eval-after-load 'web-beautify
-    (progn
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode
-        "=" 'prettier-js)
-      (spacemacs/set-leader-keys-for-major-mode 'json-mode
-        "=" 'prettier-js)
+(defun hack-prettier/post-init-web-mode ()
       (spacemacs/set-leader-keys-for-major-mode 'web-mode
-        "=" 'prettier-js)
-      (spacemacs/set-leader-keys-for-major-mode 'css-mode
-        "=" 'prettier-js))))
+        "=" 'prettier-js))
+
+(defun hack-prettier/post-init-css-mode ()
+  (spacemacs/set-leader-keys-for-major-mode 'css-mode
+    "=" 'prettier-js))
+
+(defun hack-prettier/post-init-js2-mode ()
+  (spacemacs/set-leader-keys-for-major-mode 'js2-mode
+    "=" 'prettier-js))
+
+(defun hack-prettier/post-init-json-mode ()
+  (spacemacs/set-leader-keys-for-major-mode 'json-mode
+    "=" 'prettier-js))
 
 ;;; packages.el ends here
