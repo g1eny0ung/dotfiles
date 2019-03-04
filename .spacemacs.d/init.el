@@ -46,7 +46,7 @@ values."
      git
      (markdown :variables
                markdown-live-preview-engine 'vmd)
-     org
+     ;; org
      syntax-checking
      (version-control :variables
                       version-control-diff-tool 'diff-hl)
