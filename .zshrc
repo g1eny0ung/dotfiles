@@ -105,7 +105,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--userconfig=$HOME/.cnpmrc"
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
 alias py_HTTP_Server="python3 -m http.server"
-alias php_HTTP_Server="php -S localhost:8000"
+alias php_HTTP_Server="php -S 0.0.0.0:8000"
 alias source_zshrc="source ~/.zshrc"
 alias ghci="stack ghci"
 alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
