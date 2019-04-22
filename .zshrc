@@ -103,16 +103,21 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--cache=$HOME/.npm/.cache/cnpm \
 		--disturl=https://npm.taobao.org/dist \
 		--userconfig=$HOME/.cnpmrc"
+# homebrew
 alias brew_UG="brew update && brew upgrade && brew cask upgrade"
+# py simple http server
 alias py_HTTP_Server="python3 -m http.server"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
 alias source_zshrc="source ~/.zshrc"
+# ghci
 alias ghci="stack ghci"
+# nginx
 alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
+# swift
 alias swift="PATH=/usr/bin:$PATH swift"
-alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
 alias git="LANG=\"en_US.UTF-8\" git"
 alias UP="git add . && git commit -m \"Up\" && git push origin master"
+alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
 
 export GPG_TTY=$(tty)
 

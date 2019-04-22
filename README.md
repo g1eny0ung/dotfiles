@@ -6,6 +6,7 @@ My dotfiles :satisfied: :heart: :see_no_evil: , include:
 - [neovim](#neovim)
 - [zsh (oh-my-zsh)](#zsh-oh-my-zsh)
 - [prettier](#prettier)
+- [ideavim](#ideavim)
 
 Keeping updates.
 
@@ -15,7 +16,7 @@ Welcome to contribute awesome ideas.
 
 Not auto link shell script there, because I think you won't be use all features of my specified.
 
-Go through the file you want.
+Go through the files you want.
 
 ### spacemacs
 
@@ -59,6 +60,8 @@ Summary:
   export PATH=/usr/local/opt/sqlite/bin:$PATH
   # python3 default
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
+  # ruby default
+  export PATH=/usr/local/opt/ruby/bin:$PATH
   ```
 
 - Alias
@@ -77,8 +80,6 @@ Summary:
                   --userconfig=$HOME/.cnpmrc"
   # homebrew
   alias brew_UG="brew update && brew upgrade && brew cask upgrade"
-  alias brew_UG_GREEDY="brew update && brew upgrade --greedy && brew cask upgrade --greedy"
-  alias brew_CL="brew cleanup"
   # py simple http server
   alias py_HTTP_Server="python3 -m http.server"
   alias php_HTTP_Server="php -S localhost:8000"
@@ -89,6 +90,8 @@ Summary:
   alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
   # swift
   alias swift="PATH=/usr/bin:$PATH swift"
+  alias git="LANG=\"en_US.UTF-8\" git"
+  alias UP="git add . && git commit -m \"Up\" && git push origin master"
   alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
   ```
 
@@ -99,6 +102,13 @@ Summary:
 ### prettier
 
 [Prettier](https://prettier.io/) is an opinionated code formatter. 
+
+### ideavim
+
+```
+inoremap jk <Esc>
+vnoremap jk <Esc>
+```
 
 ## License
 
