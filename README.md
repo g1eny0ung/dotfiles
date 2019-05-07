@@ -91,8 +91,6 @@ Summary:
   # swift
   alias swift="PATH=/usr/bin:$PATH swift"
   alias git="LANG=\"en_US.UTF-8\" git"
-  alias UP="git add . && git commit -m \"Up\" && git push origin master"
-  alias first_commit="git add . && git commit -m \"First commit\" && git push -u origin master"
   ```
 
 - Plugins
