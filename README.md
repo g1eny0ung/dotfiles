@@ -62,6 +62,8 @@ Summary:
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
   # ruby default
   export PATH=/usr/local/opt/ruby/bin:$PATH
+  # flutter
+  export PATH=$HOME/flutter/bin:$PATH
   ```
 
 - Alias
@@ -83,6 +85,7 @@ Summary:
   # py simple http server
   alias py_HTTP_Server="python3 -m http.server"
   alias php_HTTP_Server="php -S localhost:8000"
+  # zsh
   alias source_zshrc="source ~/.zshrc"
   # ghci
   alias ghci="stack ghci"

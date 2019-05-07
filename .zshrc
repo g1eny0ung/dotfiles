@@ -9,6 +9,8 @@ export PATH=/usr/local/opt/sqlite/bin:$PATH
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
 # ruby default
 export PATH=/usr/local/opt/ruby/bin:$PATH
+# flutter
+export PATH=$HOME/flutter/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -54,7 +56,7 @@ export UPDATE_ZSH_DAYS=10
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=".custom-zsh"
+ZSH_CUSTOM=$HOME/.custom-zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -108,6 +110,7 @@ alias brew_UG="brew update && brew upgrade && brew cask upgrade"
 # py simple http server
 alias py_HTTP_Server="python3 -m http.server"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
+# zsh
 alias source_zshrc="source ~/.zshrc"
 # ghci
 alias ghci="stack ghci"
