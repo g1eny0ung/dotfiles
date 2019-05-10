@@ -93,6 +93,7 @@ Summary:
   alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
   # swift
   alias swift="PATH=/usr/bin:$PATH swift"
+  # git
   alias git="LANG=\"en_US.UTF-8\" git"
   ```
 

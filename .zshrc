@@ -118,6 +118,7 @@ alias ghci="stack ghci"
 alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
 # swift
 alias swift="PATH=/usr/bin:$PATH swift"
+# git
 alias git="LANG=\"en_US.UTF-8\" git"
 
 export GPG_TTY=$(tty)
@@ -134,3 +135,7 @@ eval "$(stack --bash-completion-script stack)"
 # pyenv and pyenv-virtualenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
