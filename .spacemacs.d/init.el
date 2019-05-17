@@ -43,6 +43,7 @@ values."
                       :disabled-for org git)
      better-defaults
      emacs-lisp
+     common-lisp
      git
      (markdown :variables
                markdown-live-preview-engine 'vmd)
