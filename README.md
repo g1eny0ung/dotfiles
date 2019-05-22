@@ -82,7 +82,7 @@ Summary:
                   --userconfig=$HOME/.cnpmrc"
   # homebrew
   alias brew_UG="brew update && brew upgrade && brew cask upgrade"
-  # py simple http server
+  # simple http server
   alias py_HTTP_Server="python3 -m http.server"
   alias php_HTTP_Server="php -S localhost:8000"
   # zsh
