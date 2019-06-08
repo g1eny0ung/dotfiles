@@ -42,8 +42,7 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       :disabled-for org git)
      better-defaults
-     emacs-lisp
-     common-lisp
+     (multiple-cursors :variables mutiple-cursors-backend 'evil-mc)
      git
      (markdown :variables
                markdown-live-preview-engine 'vmd)
@@ -60,6 +59,8 @@ values."
      yaml
 
      ;; languages
+     emacs-lisp
+     common-lisp
      html
      javascript
      (clojure :variables
