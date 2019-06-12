@@ -3,14 +3,16 @@
 
 # Haskell bin
 export PATH=$HOME/.local/bin:$PATH
-# sqlite3 last version
+# Sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
-# python3 default
+# Python3 default
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
-# ruby default
+# Ruby default
 export PATH=/usr/local/opt/ruby/bin:$PATH
-# flutter
+# Flutter
 export PATH=$HOME/flutter/bin:$PATH
+# For crystal
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
