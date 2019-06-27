@@ -54,8 +54,6 @@ Summary:
 - PATH
 
   ```shell
-  # Haskell bin
-  export PATH=$HOME/.local/bin:$PATH
   # sqlite3 last version
   export PATH=/usr/local/opt/sqlite/bin:$PATH
   # python3 default
@@ -87,8 +85,6 @@ Summary:
   alias php_HTTP_Server="php -S localhost:8000"
   # zsh
   alias source_zshrc="source ~/.zshrc"
-  # ghci
-  alias ghci="stack ghci"
   # nginx
   alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
   # swift

@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Haskell bin
-export PATH=$HOME/.local/bin:$PATH
 # Sqlite3 last version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 # Python3 default
@@ -114,8 +112,6 @@ alias py_HTTP_Server="python3 -m http.server"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
 # zsh
 alias source_zshrc="source ~/.zshrc"
-# ghci
-alias ghci="stack ghci"
 # nginx
 alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
 # swift
@@ -132,7 +128,6 @@ export PUPPETEER_DOWNLOAD_HOST="https://npm.taobao.org/mirrors"
 # bash_completion_script
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
-eval "$(stack --bash-completion-script stack)"
 
 # pyenv and pyenv-virtualenv
 eval "$(pyenv init -)"
