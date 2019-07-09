@@ -97,8 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # neovim
 alias vi="nvim"
 alias vim="nvim"
-# lantern proxy
-alias goproxy="export http_proxy=http://127.0.0.1:50117 https_proxy=http://127.0.0.1:50117"
+# proxy
 alias disproxy="unset http_proxy https_proxy"
 # taobao npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
