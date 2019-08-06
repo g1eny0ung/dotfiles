@@ -54,14 +54,18 @@ Summary:
 - PATH
 
   ```shell
-  # sqlite3 last version
+  # Sqlite3 last version
   export PATH=/usr/local/opt/sqlite/bin:$PATH
-  # python3 default
+  # Python3 default
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
-  # ruby default
+  # Ruby default
   export PATH=/usr/local/opt/ruby/bin:$PATH
-  # flutter
+  # Flutter
   export PATH=$HOME/flutter/bin:$PATH
+  # For crystal
+  export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
+  # For pub
+  export PATH=$HOME/.pub-cache/bin:$PATH
   ```
 
 - Alias
@@ -71,17 +75,18 @@ Summary:
   alias vi="nvim"
   alias vim="nvim"
   # proxy
+  alias ssrproxy="export http_proxy=http://127.0.0.1:1087 && export https_proxy=http://127.0.0.1:1087"
   alias disproxy="unset http_proxy https_proxy"
   # taobao npm
   alias cnpm="npm --registry=https://registry.npm.taobao.org \
-                  --cache=$HOME/.npm/.cache/cnpm \
-                  --disturl=https://npm.taobao.org/dist \
-                  --userconfig=$HOME/.cnpmrc"
+      --cache=$HOME/.npm/.cache/cnpm \
+      --disturl=https://npm.taobao.org/dist \
+      --userconfig=$HOME/.cnpmrc"
   # homebrew
   alias brew_UG="brew update && brew upgrade && brew cask upgrade"
   # simple http server
   alias py_HTTP_Server="python3 -m http.server"
-  alias php_HTTP_Server="php -S localhost:8000"
+  alias php_HTTP_Server="php -S 0.0.0.0:8000"
   # zsh
   alias source_zshrc="source ~/.zshrc"
   # nginx
