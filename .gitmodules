@@ -1,3 +1,6 @@
 [submodule ".custom-zsh/plugins/zsh-autosuggestions"]
 	path = .custom-zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".custom-zsh/themes/powerlevel10k"]
+	path = .custom-zsh/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

@@ -21,7 +21,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="wedisagree"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -142,3 +142,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # opam configuration
 test -r /Users/g1eny0ung/.opam/opam-init/init.zsh && . /Users/g1eny0ung/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
