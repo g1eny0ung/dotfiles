@@ -121,6 +121,8 @@ alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/et
 alias swift="PATH=/usr/bin:$PATH swift"
 # git
 alias git="LANG=\"en_US.UTF-8\" git"
+# docker
+alias dkr="docker"
 
 export GPG_TTY=$(tty)
 
