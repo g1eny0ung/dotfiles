@@ -87,7 +87,7 @@ Summary:
       --disturl=https://npm.taobao.org/dist \
       --userconfig=$HOME/.cnpmrc"
   # homebrew
-  alias brew_UG="brew update && brew upgrade && brew cask upgrade"
+  alias brew_UG="brew update && brew upgrade && brew cask upgrade --greedy"
   # simple http server
   alias py_HTTP_Server="python3 -m http.server"
   alias php_HTTP_Server="php -S 0.0.0.0:8000"
