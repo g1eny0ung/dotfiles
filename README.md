@@ -14,7 +14,7 @@ Welcome to contribute awesome ideas.
 
 ## How to use
 
-Not auto link shell script there, because I think you won't be use all features of my specified.
+No auto-link shell script here, because I think you won't use all features of my specified.
 
 Go through the files you want.
 
@@ -33,7 +33,7 @@ Summary:
 
 ### neovim
 
-> make sure you have already installed  [vim-plug](https://github.com/junegunn/vim-plug)
+> Make sure you have already installed [vim-plug](https://github.com/junegunn/vim-plug)
 
 Only basic configurations there.
 
@@ -68,6 +68,10 @@ Summary:
   export PATH=$HOME/.pub-cache/bin:$PATH
   ```
 
+- Theme
+
+  <https://github.com/romkatv/powerlevel10k>
+
 - Alias
 
   ```shell
@@ -95,6 +99,8 @@ Summary:
   alias swift="PATH=/usr/bin:$PATH swift"
   # git
   alias git="LANG=\"en_US.UTF-8\" git"
+  # docker
+  alias dkr="docker"
   ```
 
 - Plugins
@@ -103,7 +109,7 @@ Summary:
 
 ### prettier
 
-[Prettier](https://prettier.io/) is an opinionated code formatter. 
+[Prettier](https://prettier.io/) is an opinionated code formatter.
 
 ### ideavim
 
