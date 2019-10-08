@@ -324,9 +324,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   ;; Set elpa archives
   (setq configuration-layer-elpa-archives
-        '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/melpa/")
-          ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/org/")
-          ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/gnu/")))
+        '(("melpa" . "melpa.org/packages/")
+          ("org"   . "orgmode.org/elpa/")
+          ("gnu"   . "elpa.gnu.org/packages/")))
   )
 
 (defun dotspacemacs/user-config ()
