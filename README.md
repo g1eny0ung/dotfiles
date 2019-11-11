@@ -101,6 +101,7 @@ Summary:
   alias git="LANG=\"en_US.UTF-8\" git"
   # docker
   alias dkr="docker"
+  alias dkrc="docker-compose"
   ```
 
 - Plugins
@@ -113,7 +114,7 @@ Summary:
 
 ### ideavim
 
-```
+```vimrc
 inoremap jk <Esc>
 vnoremap jk <Esc>
 ```
