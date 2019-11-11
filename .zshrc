@@ -123,6 +123,7 @@ alias swift="PATH=/usr/bin:$PATH swift"
 alias git="LANG=\"en_US.UTF-8\" git"
 # docker
 alias dkr="docker"
+alias dkrc="docker-compose"
 
 export GPG_TTY=$(tty)
 
