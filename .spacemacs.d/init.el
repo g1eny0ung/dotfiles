@@ -60,11 +60,11 @@ values."
 
      ;; languages
      emacs-lisp
-     common-lisp
      html
      javascript
      (clojure :variables
               clojure-enable-fancify-symbols t)
+     ocaml
 
      ;; personal
      hack-cider
@@ -371,6 +371,8 @@ you should place your code here."
   (add-hook 'spacemacs-buffer-mode-hook
             (lambda ()
               (set (make-local-variable 'mouse-1-click-follows-link) nil)))
+
+  (add-to-list 'exec-path "~/.opam/4.07.1/bin/")
   )
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
