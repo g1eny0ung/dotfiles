@@ -36,9 +36,6 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     (shell :variables
-            shell-default-shell 'ansi-term
-            shell-default-term-shell "/bin/zsh")
      ivy
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
