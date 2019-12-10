@@ -374,6 +374,3 @@ you should place your code here."
 
   (add-to-list 'exec-path "~/.opam/4.07.1/bin/")
   )
-
-(setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
-(load custom-file)
