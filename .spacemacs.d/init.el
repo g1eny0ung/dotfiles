@@ -373,5 +373,6 @@ you should place your code here."
             (lambda ()
               (set (make-local-variable 'mouse-1-click-follows-link) nil)))
 
+  (add-to-list 'exec-path "~/.opam/default/bin/")
   (add-to-list 'exec-path "~/.opam/4.07.1/bin/")
   )
