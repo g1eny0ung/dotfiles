@@ -125,7 +125,7 @@ alias dkrc="docker-compose"
 
 export GPG_TTY=$(tty)
 
-export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass"
+export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass/"
 
 # pyenv and pyenv-virtualenv
 eval "$(pyenv init -)"
