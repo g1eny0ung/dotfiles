@@ -109,7 +109,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 # homebrew
 alias brew_UG="brew update && brew upgrade && brew cask upgrade --greedy"
 # simple http server
-alias py_HTTP_Server="python3 -m http.server"
+alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
 # zsh
 alias source_zshrc="source ~/.zshrc"
