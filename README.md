@@ -62,8 +62,6 @@ Summary:
   export PATH=/usr/local/opt/ruby/bin:$PATH
   # Flutter
   export PATH=$HOME/flutter/bin:$PATH
-  # For crystal
-  export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
   # For pub
   export PATH=$HOME/.pub-cache/bin:$PATH
   ```
