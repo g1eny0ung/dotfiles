@@ -6,6 +6,7 @@ inoremap jk <Esc>
 vnoremap jk <Esc>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
+nnoremap <leader>e :!%:p<CR>
 
 iabbrev @@ g1enyy0ung@gmail.com
 
