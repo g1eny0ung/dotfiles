@@ -1,4 +1,4 @@
-let mapleader  = ","
+let mapleader = ","
 
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :so $MYVIMRC<CR>
@@ -19,9 +19,11 @@ set background=dark
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'elzr/vim-json'
 
 call plug#end()
 
+colo gruvbox
