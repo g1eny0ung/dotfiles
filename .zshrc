@@ -141,3 +141,5 @@ test -r /Users/g1eny0ung/.opam/opam-init/init.zsh && . /Users/g1eny0ung/.opam/op
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+source <(kubectl completion zsh)
