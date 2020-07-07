@@ -374,5 +374,9 @@ you should place your code here."
               (set (make-local-variable 'mouse-1-click-follows-link) nil)))
 
   (add-to-list 'exec-path "~/.opam/default/bin/")
-  (add-to-list 'exec-path "~/.opam/4.07.1/bin/")
+  (add-to-list 'exec-path "~/.opam/4.10.0/bin/")
+
+  ;; https://github.com/ocaml/tuareg#tips--customization
+  (setq tuareg-indent-align-with-first-arg t)
+  (setq tuareg-match-patterns-aligned t)
   )
