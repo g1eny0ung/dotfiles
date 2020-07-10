@@ -122,6 +122,8 @@ alias git="LANG=\"en_US.UTF-8\" git"
 # docker
 alias dkr="docker"
 alias dkrc="docker-compose"
+# kubectl
+alias k="kubectl"
 
 export GPG_TTY=$(tty)
 
