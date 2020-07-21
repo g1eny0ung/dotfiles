@@ -8,9 +8,7 @@ My dotfiles :satisfied: :heart: :see_no_evil: , include:
 - [prettier](#prettier)
 - [ideavim](#ideavim)
 
-Keeping updates.
-
-Welcome to contribute awesome ideas.
+Keeping updated.
 
 ## How to use
 
@@ -70,7 +68,7 @@ Summary:
 
   <https://github.com/romkatv/powerlevel10k>
 
-- Alias
+- Aliases
 
   ```shell
   # neovim
@@ -100,6 +98,8 @@ Summary:
   # docker
   alias dkr="docker"
   alias dkrc="docker-compose"
+  # kubectl
+  alias k="kubectl"
   ```
 
 - Plugins
@@ -115,6 +115,9 @@ Summary:
 ```vimrc
 inoremap jk <Esc>
 vnoremap jk <Esc>
+
+set surround
+set multiple-cursors
 ```
 
 ## License
