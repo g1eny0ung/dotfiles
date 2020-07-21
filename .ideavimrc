@@ -1,2 +1,5 @@
 inoremap jk <Esc>
 vnoremap jk <Esc>
+
+set surround
+set multiple-cursors

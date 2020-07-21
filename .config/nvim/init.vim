@@ -23,6 +23,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'elzr/vim-json'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
