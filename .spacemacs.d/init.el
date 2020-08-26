@@ -60,15 +60,19 @@ values."
 
      ;; languages
      emacs-lisp
-     html
-     javascript
+     lsp
+     (html :variables
+           web-fmt-tool 'prettier)
+     (javascript :variables
+                 js2-basic-offset 2
+                 js-indent-level 2
+                 javascript-fmt-tool 'prettier)
      (clojure :variables
               clojure-enable-fancify-symbols t)
      lua
 
      ;; personal
      hack-cider
-     hack-prettier
      hack-real-auto-save
      )
    ;; List of additional packages that will be installed without being
@@ -347,8 +351,6 @@ you should place your code here."
   (add-hook 'prog-mode-hook 'spacemacs/toggle-hungry-delete-on)
 
   ;; js2-mode specified
-  (setq-default js2-basic-offset 2)
-  (setq-default js-indent-level 2)
   (setq-default js2-strict-missing-semi-warning nil)
 
   ;; web-mode specified
@@ -366,9 +368,4 @@ you should place your code here."
 
   ;; powerline specified
   (setq powerline-default-separator 'nil)
-
-  ;; Fixed auto paste when first open recent file
-  (add-hook 'spacemacs-buffer-mode-hook
-            (lambda ()
-              (set (make-local-variable 'mouse-1-click-follows-link) nil)))
   )

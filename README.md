@@ -26,7 +26,6 @@ Summary:
 - All custom configurations in `dotspacemacs/user-init` and `dotspacemacs/user-config`, `SPC s s` to find it.
 - Custom layers (in `.spacemacs.d/layers`)
   - hack-real-auto-save
-  - hack-prettier
   - hack-cider
 
 ### neovim
