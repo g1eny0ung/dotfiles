@@ -12,6 +12,8 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=$HOME/flutter/bin:$PATH
 # For pub
 export PATH=$HOME/.pub-cache/bin:$PATH
+# JDK
+export PATH=/usr/local/opt/openjdk/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -107,7 +109,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--disturl=https://npm.taobao.org/dist \
 		--userconfig=$HOME/.cnpmrc"
 # homebrew
-alias brew_UG="brew update && brew upgrade && brew cask upgrade --greedy"
+alias brew_UG="brew update && brew upgrade && brew upgrade --cask --greedy"
 # simple http server
 alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
