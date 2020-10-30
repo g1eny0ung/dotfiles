@@ -57,10 +57,10 @@ Summary:
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
   # Ruby default
   export PATH=/usr/local/opt/ruby/bin:$PATH
-  # Flutter
-  export PATH=$HOME/flutter/bin:$PATH
   # For pub
   export PATH=$HOME/.pub-cache/bin:$PATH
+  # JDK
+  export PATH=/usr/local/opt/openjdk/bin:$PATH
   ```
 
 - Theme
@@ -82,16 +82,14 @@ Summary:
       --disturl=https://npm.taobao.org/dist \
       --userconfig=$HOME/.cnpmrc"
   # homebrew
-  alias brew_UG="brew update && brew upgrade && brew cask upgrade --greedy"
+  alias brew_UG="brew update && brew upgrade && brew upgrade --cask --greedy"
   # simple http server
-  alias py_HTTP_Server="python3 -m http.server"
+  alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
   alias php_HTTP_Server="php -S 0.0.0.0:8000"
   # zsh
   alias source_zshrc="source ~/.zshrc"
   # nginx
   alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
-  # swift
-  alias swift="PATH=/usr/bin:$PATH swift"
   # git
   alias git="LANG=\"en_US.UTF-8\" git"
   # docker
@@ -99,6 +97,8 @@ Summary:
   alias dkrc="docker-compose"
   # kubectl
   alias k="kubectl"
+  # flutter
+  alias flutter="~/flutter/bin/flutter"
   ```
 
 - Plugins
