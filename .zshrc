@@ -99,8 +99,8 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias vim="nvim"
 # proxy
-alias clashxproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890"
-alias disproxy="unset http_proxy https_proxy"
+alias clashxproxy="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export no_proxy=127.0.0.1,localhost"
+alias disproxy="unset http_proxy https_proxy no_proxy"
 # taobao npm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--cache=$HOME/.npm/.cache/cnpm \
