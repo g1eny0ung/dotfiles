@@ -329,8 +329,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;; Set proxy
   (setq url-proxy-services
         '(("no_proxy" . "^\\(localhost\\|127.0.0.1\\)")
-          ("http" . "127.0.0.1:1087")
-          ("https" . "127.0.0.1:1087")))
+          ("http" . "127.0.0.1:7890")
+          ("https" . "127.0.0.1:7890")))
 
   ;; Set elpa archives
   (setq configuration-layer-elpa-archives
