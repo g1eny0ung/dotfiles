@@ -146,3 +146,5 @@ test -r /Users/g1eny0ung/.opam/opam-init/init.zsh && . /Users/g1eny0ung/.opam/op
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 source <(kubectl completion zsh)
+
+export PATH=/Users/g1eny0ung/.tiup/bin:$PATH
