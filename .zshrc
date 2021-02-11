@@ -2,7 +2,7 @@ export LC_ALL=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Sqlite3 last version
+# Sqlite3 latest version
 export PATH=/usr/local/opt/sqlite/bin:$PATH
 # Python3 default
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
@@ -33,7 +33,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=7
+export UPDATE_ZSH_DAYS=14
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
