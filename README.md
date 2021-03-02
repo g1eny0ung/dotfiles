@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles :satisfied: :heart: :see_no_evil: , include:
+My dotfiles :satisfied: :heart: :see_no_evil:, include:
 
 - [spacemacs](#spacemacs)
 - [neovim](#neovim)
@@ -12,25 +12,25 @@ Keeping updated.
 
 ## How to use
 
-No auto-link shell script here, because I think you won't use all features of my specified.
+No auto-link shell script here because I think you won't use all features of my specified.
 
 Go through the files you want.
 
 ### spacemacs
 
-> Make sure you have already installed [spacemacs](http://spacemacs.org/)
+> Make sure you have already installed [spacemacs](http://spacemacs.org/).
 
 Summary:
 
-- All used layers in `dotspacemacs-configuration-layers`, `SPC s s` to find it.
-- All custom configurations in `dotspacemacs/user-init` and `dotspacemacs/user-config`, `SPC s s` to find it.
+- All used layers placed in `dotspacemacs-configuration-layers`. Use `SPC s s` to find them.
+- All custom configurations placed in `dotspacemacs/user-init` and `dotspacemacs/user-config`. Use `SPC s s` to find them.
 - Custom layers (in `.spacemacs.d/layers`)
   - hack-real-auto-save
   - hack-cider
 
 ### neovim
 
-> Make sure you have already installed [vim-plug](https://github.com/junegunn/vim-plug)
+> Make sure you have already installed [vim-plug](https://github.com/junegunn/vim-plug).
 
 Only basic configurations there.
 
@@ -39,10 +39,14 @@ Summary:
 - `Leader Key` == `,`
 - `jk` == `<Esc>`
 - `@@` == `your email, need to customize`
-- Plugins
-  - [vim-airline](https://github.com/vim-airline/vim-airline)
-  - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-  - [vim-json](https://github.com/elzr/vim-json)
+
+Plugins:
+
+> Plug 'morhetz/gruvbox'
+> Plug 'vim-airline/vim-airline'
+> Plug 'airblade/vim-gitgutter'
+> Plug 'elzr/vim-json'
+> Plug 'editorconfig/editorconfig-vim'
 
 ### zsh (oh-my-zsh)
 
@@ -74,8 +78,8 @@ Summary:
   alias vi="nvim"
   alias vim="nvim"
   # proxy
-  alias clashxproxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890"
-  alias disproxy="unset http_proxy https_proxy"
+  alias clashxproxy="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export no_proxy=127.0.0.1,localhost"
+  alias disproxy="unset http_proxy https_proxy no_proxy"
   # taobao npm
   alias cnpm="npm --registry=https://registry.npm.taobao.org \
       --cache=$HOME/.npm/.cache/cnpm \
@@ -115,8 +119,10 @@ Summary:
 inoremap jk <Esc>
 vnoremap jk <Esc>
 
+set clipboard+=unnamed
+set relativenumber
+
 set surround
-set multiple-cursors
 ```
 
 ## License
