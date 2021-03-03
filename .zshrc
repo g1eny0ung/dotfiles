@@ -10,16 +10,21 @@ export LC_ALL=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Sqlite3 latest version
-export PATH=/usr/local/opt/sqlite/bin:$PATH
-# Python3 default
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-# Ruby default
-export PATH=/usr/local/opt/ruby/bin:$PATH
-# For pub
-export PATH=$HOME/.pub-cache/bin:$PATH
-# JDK
-export PATH=/usr/local/opt/openjdk/bin:$PATH
+if [[ $(uname -m) != "arm64" ]]; then
+  # Sqlite3 latest version
+  export PATH=/usr/local/opt/sqlite/bin:$PATH
+  # Python3 default
+  export PATH=/usr/local/opt/python/libexec/bin:$PATH
+  # Ruby default
+  export PATH=/usr/local/opt/ruby/bin:$PATH
+  # For pub
+  export PATH=$HOME/.pub-cache/bin:$PATH
+  # JDK
+  export PATH=/usr/local/opt/openjdk/bin:$PATH
+else
+  # Ruby default
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
