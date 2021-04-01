@@ -24,6 +24,8 @@ if [[ $(uname -m) != "arm64" ]]; then
 else
   # Ruby default
   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  # JDK
+  export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
 fi
 
 # Path to your oh-my-zsh installation.
