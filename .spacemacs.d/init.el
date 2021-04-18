@@ -322,15 +322,9 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
- This function is mostly useful for variables that need to be set
+This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-
-  ;; Set proxy
-  (setq url-proxy-services
-        '(("no_proxy" . "^\\(localhost\\|127.0.0.1\\)")
-          ("http" . "127.0.0.1:7890")
-          ("https" . "127.0.0.1:7890")))
 
   ;; Set elpa archives
   (setq configuration-layer-elpa-archives
