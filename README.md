@@ -25,8 +25,6 @@ Summary:
 - All used layers placed in `dotspacemacs-configuration-layers`. Use `SPC s s` to find them.
 - All custom configurations placed in `dotspacemacs/user-init` and `dotspacemacs/user-config`. Use `SPC s s` to find them.
 - Custom layers (in `.spacemacs.d/layers`)
-  - hack-real-auto-save
-  - hack-cider
 
 ### neovim
 
