@@ -40,11 +40,11 @@ Summary:
 
 Plugins:
 
-> Plug 'morhetz/gruvbox'
-> Plug 'vim-airline/vim-airline'
-> Plug 'airblade/vim-gitgutter'
-> Plug 'elzr/vim-json'
-> Plug 'editorconfig/editorconfig-vim'
+- Plug 'morhetz/gruvbox'
+- Plug 'vim-airline/vim-airline'
+- Plug 'airblade/vim-gitgutter'
+- Plug 'elzr/vim-json'
+- Plug 'editorconfig/editorconfig-vim'
 
 ### zsh (oh-my-zsh)
 
@@ -53,7 +53,7 @@ Summary:
 - PATH
 
   ```shell
-  # Sqlite3 last version
+  # Sqlite3 latest version
   export PATH=/usr/local/opt/sqlite/bin:$PATH
   # Python3 default
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
