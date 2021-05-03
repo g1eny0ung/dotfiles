@@ -148,6 +148,7 @@ alias dkr="docker"
 alias dkrc="docker-compose"
 # kubectl
 alias k="kubectl"
+alias kpoa="k get po -A"
 # flutter
 alias flutter="~/flutter/bin/flutter"
 
