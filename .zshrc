@@ -157,7 +157,7 @@ export GPG_TTY=$(tty)
 export SASS_BINARY_SITE="https://npm.taobao.org/mirrors/node-sass/"
 
 # pyenv and pyenv-virtualenv
-if [ -r pyenv ]; then
+if command -v pyenv &>/dev/null; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
@@ -173,8 +173,6 @@ test -r $HOME/.opam/opam-init/init.zsh && . $HOME/.opam/opam-init/init.zsh > /de
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-if [ -r kubectl ]; then
-  source <(kubectl completion zsh)
-fi
+[ -r kubectl ] && source <(kubectl completion zsh)
 
 export PATH=$HOME/.tiup/bin:$PATH
