@@ -133,7 +133,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 		--disturl=https://npm.taobao.org/dist \
 		--userconfig=$HOME/.cnpmrc"
 # homebrew
-alias brew_UG="brew update && brew upgrade && brew upgrade --cask --greedy"
+alias brew_UG="brew update && brew upgrade"
 # simple http server
 alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
