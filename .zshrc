@@ -165,7 +165,7 @@ fi
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
+[ -r $NVM_DIR/bash_completion ] && \. $NVM_DIR/bash_completion
 
 # opam configuration
 test -r $HOME/.opam/opam-init/init.zsh && . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
@@ -173,6 +173,9 @@ test -r $HOME/.opam/opam-init/init.zsh && . $HOME/.opam/opam-init/init.zsh > /de
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-[ -r kubectl ] && source <(kubectl completion zsh)
+# kubectl
+if command -v kubectl &>/dev/null; then
+  source <(kubectl completion zsh)
+fi
 
 export PATH=$HOME/.tiup/bin:$PATH
