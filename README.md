@@ -40,11 +40,13 @@ Summary:
 
 Plugins:
 
-- Plug 'morhetz/gruvbox'
-- Plug 'vim-airline/vim-airline'
-- Plug 'airblade/vim-gitgutter'
-- Plug 'elzr/vim-json'
-- Plug 'editorconfig/editorconfig-vim'
+```
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'elzr/vim-json'
+Plug 'editorconfig/editorconfig-vim'
+```
 
 ### zsh (oh-my-zsh)
 
@@ -64,10 +66,6 @@ Summary:
   # JDK
   export PATH=/usr/local/opt/openjdk/bin:$PATH
   ```
-
-- Theme
-
-  <https://github.com/romkatv/powerlevel10k>
 
 - Aliases
 
@@ -103,11 +101,15 @@ Summary:
   alias flutter="~/flutter/bin/flutter"
   ```
 
+- Theme
+
+  <https://github.com/romkatv/powerlevel10k>
+
 - Plugins
 
   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-### prettier
+### Prettier
 
 [Prettier](https://prettier.io/) is an opinionated code formatter.
 
