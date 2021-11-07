@@ -26,6 +26,8 @@ else
   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
   # JDK
   export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
+  # nodejs@16
+  export PATH=/opt/homebrew/opt/node@16/bin:$PATH
 fi
 
 # Path to your oh-my-zsh installation.
