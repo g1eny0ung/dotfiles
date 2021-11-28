@@ -17,18 +17,22 @@ if [[ $(uname -m) != "arm64" ]]; then
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
   # Ruby default
   export PATH=/usr/local/opt/ruby/bin:$PATH
-  # For pub
-  export PATH=$HOME/.pub-cache/bin:$PATH
   # JDK
   export PATH=/usr/local/opt/openjdk/bin:$PATH
 else
   # Ruby default
   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH
   # JDK
   export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
   # nodejs@16
   export PATH=/opt/homebrew/opt/node@16/bin:$PATH
+  # dart@2.10
+  export PATH=/opt/homebrew/opt/dart@2.10/bin:$PATH
 fi
+
+# For pub
+export PATH=$HOME/.pub-cache/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
