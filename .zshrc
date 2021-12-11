@@ -10,27 +10,21 @@ export LC_ALL=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-if [[ $(uname -m) != "arm64" ]]; then
-  # Sqlite3 latest version
-  export PATH=/usr/local/opt/sqlite/bin:$PATH
-  # Python3 default
-  export PATH=/usr/local/opt/python/libexec/bin:$PATH
-  # Ruby default
-  export PATH=/usr/local/opt/ruby/bin:$PATH
-  # JDK
-  export PATH=/usr/local/opt/openjdk/bin:$PATH
-else
-  # Ruby default
-  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-  export PATH=/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH
-  # JDK
-  export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
+if [[ $(uname -m) == "arm64" ]]; then
   # nodejs@16
   export PATH=/opt/homebrew/opt/node@16/bin:$PATH
   # dart@2.10
   export PATH=/opt/homebrew/opt/dart@2.10/bin:$PATH
 fi
 
+# Sqlite3 latest version
+export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
+# Python3 default
+export PATH=$(brew --prefix)/opt/python/libexec/bin:$PATH
+# Ruby default
+export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
+# JDK
+export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
 # For pub
 export PATH=$HOME/.pub-cache/bin:$PATH
 
@@ -145,8 +139,6 @@ alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
 # zsh
 alias source_zshrc="source ~/.zshrc"
-# nginx
-alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
 # git
 alias git="LANG=\"en_US.UTF-8\" git"
 # docker
