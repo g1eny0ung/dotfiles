@@ -56,15 +56,15 @@ Summary:
 
   ```shell
   # Sqlite3 latest version
-  export PATH=/usr/local/opt/sqlite/bin:$PATH
+  export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
   # Python3 default
-  export PATH=/usr/local/opt/python/libexec/bin:$PATH
+  export PATH=$(brew --prefix)/opt/python/libexec/bin:$PATH
   # Ruby default
-  export PATH=/usr/local/opt/ruby/bin:$PATH
+  export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
+  # JDK
+  export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
   # For pub
   export PATH=$HOME/.pub-cache/bin:$PATH
-  # JDK
-  export PATH=/usr/local/opt/openjdk/bin:$PATH
   ```
 
 - Aliases

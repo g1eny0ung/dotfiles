@@ -13,8 +13,6 @@ export LC_ALL=en_US.UTF-8
 if [[ $(uname -m) == "arm64" ]]; then
   # nodejs@16
   export PATH=/opt/homebrew/opt/node@16/bin:$PATH
-  # dart@2.10
-  export PATH=/opt/homebrew/opt/dart@2.10/bin:$PATH
 fi
 
 # Sqlite3 latest version
