@@ -56,7 +56,7 @@ This function should only modify configuration layer settings."
              colors-colorize-identifiers 'all
              colors-enable-nyan-cat-progress-bar t)
      (wakatime :variables
-               wakatime-cli-path "/usr/local/bin/wakatime")
+               wakatime-cli-path (shell-command-to-string "echo $(brew --prefix)/bin/wakatime-cli"))
      dash
      yaml
 
@@ -72,8 +72,8 @@ This function should only modify configuration layer settings."
      (clojure :variables
               clojure-enable-fancify-symbols t)
      lua
-     treemacs)
 
+     treemacs)
 
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
@@ -360,7 +360,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
 
    ;; If non-nil the frame is undecorated when Emacs starts up. Combine this
    ;; variable with `dotspacemacs-maximized-at-startup' in OSX to obtain
