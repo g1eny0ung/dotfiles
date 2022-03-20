@@ -44,20 +44,19 @@ This function should only modify configuration layer settings."
                       auto-completion-enable-snippets-in-popup t
                       :disabled-for git org)
      better-defaults
-     multiple-cursors
+     (colors :variables
+             colors-colorize-identifiers 'all
+             colors-enable-nyan-cat-progress-bar t)
+     dash
      git
      (markdown :variables
                markdown-live-preview-engine 'vmd)
+     multiple-cursors
      ;; org
      syntax-checking
      (version-control :variables
                       version-control-diff-tool 'diff-hl)
-     (colors :variables
-             colors-colorize-identifiers 'all
-             colors-enable-nyan-cat-progress-bar t)
-     (wakatime :variables
-               wakatime-cli-path (shell-command-to-string "echo $(brew --prefix)/bin/wakatime-cli"))
-     dash
+     wakatime
      yaml
 
      ;; languages
@@ -415,7 +414,7 @@ It should only modify the values of Spacemacs settings."
    ;;   :size-limit-kb 1000)
    ;; When used in a plist, `visual' takes precedence over `relative'.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
