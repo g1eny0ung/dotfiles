@@ -173,3 +173,5 @@ test -r $HOME/.opam/opam-init/init.zsh && . $HOME/.opam/opam-init/init.zsh > /de
 if command -v kubectl &>/dev/null; then
   source <(kubectl completion zsh)
 fi
+
+export PATH=/Users/yangyue/.tiup/bin:$PATH
