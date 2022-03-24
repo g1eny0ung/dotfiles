@@ -70,6 +70,7 @@ This function should only modify configuration layer settings."
                  js-indent-level 2
                  javascript-fmt-tool 'prettier)
      (clojure :variables
+              clojure-backend 'cider
               clojure-enable-fancify-symbols t
               clojure-enable-linters 'clj-kondo)
      lua
