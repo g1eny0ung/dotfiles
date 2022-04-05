@@ -21,6 +21,7 @@ export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
 export PATH=$(brew --prefix)/opt/python/libexec/bin:$PATH
 # Ruby default
 export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
+export PATH=$(gem env gemdir)/bin:$PATH
 # JDK
 export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
 # For pub
