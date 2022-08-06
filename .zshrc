@@ -125,11 +125,11 @@ alias vi="nvim"
 alias vim="nvim"
 # proxy
 alias clashxproxy="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export no_proxy=127.0.0.1,localhost"
-alias disproxy="unset http_proxy https_proxy no_proxy"
+alias unproxy="unset http_proxy https_proxy no_proxy"
 # homebrew
 alias brew_UG="brew update && brew upgrade"
 # simple http server
-alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
+alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1" # local
 alias php_HTTP_Server="php -S 0.0.0.0:8000"
 # zsh
 alias source_zshrc="source ~/.zshrc"
@@ -143,6 +143,8 @@ alias k="kubectl"
 alias kpoa="k get po -A"
 # flutter
 alias flutter="~/flutter/bin/flutter"
+# pnpm
+alias pn="pnpm"
 
 export GPG_TTY=$(tty)
 
