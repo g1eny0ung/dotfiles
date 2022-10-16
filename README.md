@@ -114,7 +114,7 @@ Summary:
 inoremap jk <Esc>
 vnoremap jk <Esc>
 
-set clipboard+=unnamed
+set clipboard^=unnamed
 set relativenumber
 
 set surround
