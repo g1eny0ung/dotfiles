@@ -169,3 +169,8 @@ export NVM_DIR="$HOME/.nvm"
 if command -v kubectl &>/dev/null; then
   source <(kubectl completion zsh)
 fi
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
