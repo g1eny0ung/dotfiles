@@ -11,21 +11,21 @@ export LC_ALL=en_US.UTF-8
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 if [[ $(uname -m) == "arm64" ]]; then
-  # nodejs@16
-  export PATH=/opt/homebrew/opt/node@16/bin:$PATH
+  # nodejs@18
+  export PATH=$PATH:$(brew --prefix)/opt/node@18/bin
 fi
 
 # Sqlite3 latest version
-export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
+export PATH=$PATH:$(brew --prefix)/opt/sqlite/bin
 # Python3 default
-export PATH=$(brew --prefix)/opt/python/libexec/bin:$PATH
+export PATH=$PATH:$(brew --prefix)/opt/python/libexec/bin
 # Ruby default
-export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
-export PATH=$(gem env gemdir)/bin:$PATH
+export PATH=$PATH:$(brew --prefix)/opt/ruby/bin
+export PATH=$PATH:$(gem env gemdir)/bin
 # JDK
-export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
+export PATH=$PATH:$(brew --prefix)/opt/openjdk/bin
 # For pub
-export PATH=$HOME/.pub-cache/bin:$PATH
+export PATH=$PATH:$HOME/.pub-cache/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
