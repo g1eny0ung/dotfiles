@@ -1,10 +1,10 @@
 # dotfiles
 
-My dotfiles :satisfied: :heart: :see_no_evil:, include:
+My dotfiles :satisfied: :see_no_evil:, include:
 
+- [zsh (oh-my-zsh)](#zsh-oh-my-zsh)
 - [spacemacs](#spacemacs)
 - [neovim](#neovim)
-- [zsh (oh-my-zsh)](#zsh-oh-my-zsh)
 - [prettier](#prettier)
 - [ideavim](#ideavim)
 
@@ -15,38 +15,6 @@ Keeping updated.
 No auto-link shell script here because I think you won't use all features of my specified.
 
 Go through the files you want.
-
-### spacemacs
-
-> Make sure you have already installed [spacemacs](http://spacemacs.org/).
-
-Summary:
-
-- All used layers placed in `dotspacemacs-configuration-layers`. Use `SPC s s` to find them.
-- All custom configurations placed in `dotspacemacs/user-init` and `dotspacemacs/user-config`. Use `SPC s s` to find them.
-- Custom layers (in `.spacemacs.d/layers`)
-
-### neovim
-
-> Make sure you have already installed [vim-plug](https://github.com/junegunn/vim-plug).
-
-Only basic configurations there.
-
-Summary:
-
-- `Leader Key` == `,`
-- `jk` == `<Esc>`
-- `@@` == `your email, need to customize`
-
-Plugins:
-
-```txt
-Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'airblade/vim-gitgutter'
-Plug 'elzr/vim-json'
-Plug 'editorconfig/editorconfig-vim'
-```
 
 ### zsh (oh-my-zsh)
 
@@ -82,8 +50,6 @@ Summary:
   alias php_HTTP_Server="php -S 0.0.0.0:8000"
   # zsh
   alias source_zshrc="source ~/.zshrc"
-  # nginx
-  alias reset_nginx_conf="cp /usr/local/etc/nginx/nginx.conf.default /usr/local/etc/nginx/nginx.conf"
   # git
   alias git="LANG=\"en_US.UTF-8\" git"
   # docker
@@ -93,6 +59,8 @@ Summary:
   alias k="kubectl"
   # flutter
   alias flutter="~/flutter/bin/flutter"
+  # pnpm
+  alias pn="pnpm"
   ```
 
 - Theme
@@ -102,6 +70,38 @@ Summary:
 - Plugins
 
   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+### spacemacs
+
+> Make sure you have already installed [spacemacs](http://spacemacs.org/).
+
+Summary:
+
+- All used layers placed in `dotspacemacs-configuration-layers`. Use `SPC s s` to find them.
+- All custom configurations placed in `dotspacemacs/user-init` and `dotspacemacs/user-config`. Use `SPC s s` to find them.
+- Custom layers (in `.spacemacs.d/layers`)
+
+### neovim
+
+> Make sure you have already installed [vim-plug](https://github.com/junegunn/vim-plug).
+
+Only basic configurations there. Just for editing some configuration-like files.
+
+Summary:
+
+- `Leader Key` == `,`
+- `jk` == `<Esc>`
+- `@@` == `your email, need to customize`
+
+Plugins:
+
+```txt
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'elzr/vim-json'
+Plug 'editorconfig/editorconfig-vim'
+```
 
 ### Prettier
 
