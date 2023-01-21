@@ -40,7 +40,7 @@ Summary:
 
 Plugins:
 
-```
+```txt
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
@@ -57,10 +57,9 @@ Summary:
   ```shell
   # Sqlite3 latest version
   export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
-  # Python3 default
-  export PATH=$(brew --prefix)/opt/python/libexec/bin:$PATH
   # Ruby default
   export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
+  export PATH=$(gem env gemdir)/bin:$PATH
   # JDK
   export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
   # For pub
