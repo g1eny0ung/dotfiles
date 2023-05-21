@@ -171,6 +171,7 @@ if command -v kubectl &>/dev/null; then
   source <(kubectl completion zsh)
   complete -o default -F __start_kubectl k
 fi
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -178,5 +179,6 @@ export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 # bit
-export PATH="$PATH:/Users/yangyue/bin"
+# aka home/bin
+export PATH="$PATH:$HOME/bin"
 # bit end
