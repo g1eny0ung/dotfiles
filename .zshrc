@@ -10,8 +10,8 @@ export LC_ALL=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Use node@18 on the laptop I work on most of the time (Mac M1/M2).
 if [[ $(uname -m) == "arm64" ]]; then
-  # nodejs@18
   export PATH=$(brew --prefix)/opt/node@18/bin:$PATH
 fi
 
@@ -22,8 +22,10 @@ export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
 export PATH=$(gem env gemdir)/bin:$PATH
 # JDK
 export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
-# For pub
+# Pub
 export PATH=$HOME/.pub-cache/bin:$PATH
+# Add home/bin
+export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -133,6 +135,7 @@ alias php_HTTP_Server="php -S 0.0.0.0:8000"
 alias source_zshrc="source ~/.zshrc"
 # git
 alias git="LANG=\"en_US.UTF-8\" git"
+alias git_delete_gone_branches="git branch -vv | grep ': gone]' | awk '{ print $1; }' | xargs git branch -D"
 # docker
 alias dkr="docker"
 alias dkrc="docker-compose"
@@ -171,14 +174,10 @@ if command -v kubectl &>/dev/null; then
   source <(kubectl completion zsh)
   complete -o default -F __start_kubectl k
 fi
+
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
-
-# bit
-# aka home/bin
-export PATH="$PATH:$HOME/bin"
-# bit end
