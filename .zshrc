@@ -135,7 +135,7 @@ alias php_HTTP_Server="php -S 0.0.0.0:8000"
 alias source_zshrc="source ~/.zshrc"
 # git
 alias git="LANG=\"en_US.UTF-8\" git"
-alias git_delete_gone_branches="git branch -vv | grep ': gone]' | awk '{ print $1; }' | xargs git branch -D"
+alias git_delete_gone_branches="git branch -vv | grep ': gone]' | awk '{ print \$1; }' | xargs git branch -D"
 # docker
 alias dkr="docker"
 alias dkrc="docker-compose"
