@@ -146,6 +146,8 @@ alias kpoa="k get po -A"
 alias flutter="~/flutter/bin/flutter"
 # pnpm
 alias pn="pnpm"
+# minikube
+alias mk="minikube"
 
 export GPG_TTY=$(tty)
 
