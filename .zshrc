@@ -142,6 +142,7 @@ alias dkrc="docker-compose"
 # kubectl
 alias k="kubectl"
 alias kpoa="k get po -A --sort-by=.metadata.namespace"
+alias kpo="k get po"
 # flutter
 alias flutter="~/flutter/bin/flutter"
 # pnpm
