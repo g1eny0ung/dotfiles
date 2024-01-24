@@ -139,6 +139,7 @@ alias git_delete_gone_branches="git branch -vv | grep ': gone]' | awk '{ print \
 # docker
 alias dkr="docker"
 alias dkrc="docker-compose"
+alias dkri="docker images"
 # kubectl
 alias k="kubectl"
 alias kpoa="k get po -A --sort-by=.metadata.namespace"
