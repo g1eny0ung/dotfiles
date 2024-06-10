@@ -10,9 +10,9 @@ export LC_ALL=en_US.UTF-8
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Use node@18 on the laptop I work on most of the time (Mac M1/M2).
+# Use node@20 on the laptop I work on most of the time (Mac Mx).
 if [[ $(uname -m) == "arm64" ]]; then
-  export PATH=$(brew --prefix)/opt/node@18/bin:$PATH
+  export PATH=$(brew --prefix)/opt/node@20/bin:$PATH
 fi
 
 # Sqlite3 latest version
