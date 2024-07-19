@@ -17,7 +17,7 @@ set shiftround
 
 set background=dark
 
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin()
 
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
