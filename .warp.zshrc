@@ -126,7 +126,7 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias vim="nvim"
 # proxy
-alias clashxproxy="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export no_proxy=127.0.0.1,localhost,::1"
+alias clashxproxy="export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890 no_proxy=127.0.0.1,localhost,::1"
 alias unproxy="unset http_proxy https_proxy no_proxy"
 # homebrew
 alias brew_UG="brew update && brew upgrade"
