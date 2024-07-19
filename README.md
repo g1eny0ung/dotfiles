@@ -1,6 +1,8 @@
 # dotfiles
 
-My dotfiles :satisfied: :see_no_evil:, include:
+This repo includes my dotfiles. 😃
+
+## TOC
 
 - [zsh (oh-my-zsh)](#zsh-oh-my-zsh)
 - [spacemacs](#spacemacs)
@@ -8,13 +10,15 @@ My dotfiles :satisfied: :see_no_evil:, include:
 - [prettier](#prettier)
 - [ideavim](#ideavim)
 
-Keeping updated.
-
 ## How to use
 
-No auto-link shell script here because I think you won't use all features of my specified.
+I have not created any automated scripts to simplify the installation of these dotfiles.
 
-Go through the files you want.
+Usually you just need to create soft links to them. For example:
+
+```shell
+sudo ln -s /path/to/dotfiles/.zshrc ~/.zshrc
+```
 
 ### zsh (oh-my-zsh)
 
