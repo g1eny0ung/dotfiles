@@ -22,8 +22,8 @@ sudo ln -s /path/to/dotfiles/.zshrc ~/.zshrc
 
 ### zsh (oh-my-zsh)
 
-For Warp users, you can use `.warp.zshrc`, which removes the custom theme and
-plugins because Warp has already provided them.
+> For Warp users, you can use `.warp.zshrc`, which removes the custom theme and
+> plugins because Warp has already provided them.
 
 #### PATH
 
