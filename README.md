@@ -18,58 +18,67 @@ Go through the files you want.
 
 ### zsh (oh-my-zsh)
 
-Summary:
+For Warp users, you can use `.warp.zshrc`, which removes the custom theme and
+plugins because Warp has already provided them.
 
-- PATH
+#### PATH
 
-  ```shell
-  # Sqlite3 latest version
-  export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
-  # Ruby default
-  export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
-  export PATH=$(gem env gemdir)/bin:$PATH
-  # JDK
-  export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
-  # For pub
-  export PATH=$HOME/.pub-cache/bin:$PATH
-  ```
+```shell
+# Sqlite3 latest version
+export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
+# Ruby default
+export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
+export PATH=$(gem env home)/bin:$PATH
+# JDK
+export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
+# Pub
+export PATH=$HOME/.pub-cache/bin:$PATH
+# Add home/bin
+export PATH=$HOME/bin:$PATH
+```
 
-- Aliases
+#### Aliases
 
-  ```shell
-  # neovim
-  alias vi="nvim"
-  alias vim="nvim"
-  # proxy
-  alias clashxproxy="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export no_proxy=127.0.0.1,localhost"
-  alias disproxy="unset http_proxy https_proxy no_proxy"
-  # homebrew
-  alias brew_UG="brew update && brew upgrade && brew upgrade --cask --greedy"
-  # simple http server
-  alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
-  alias php_HTTP_Server="php -S 0.0.0.0:8000"
-  # zsh
-  alias source_zshrc="source ~/.zshrc"
-  # git
-  alias git="LANG=\"en_US.UTF-8\" git"
-  # docker
-  alias dkr="docker"
-  alias dkrc="docker-compose"
-  # kubectl
-  alias k="kubectl"
-  # flutter
-  alias flutter="~/flutter/bin/flutter"
-  # pnpm
-  alias pn="pnpm"
-  ```
+```shell
+# neovim
+alias vi="nvim"
+alias vim="nvim"
+# proxy
+alias clashxproxy="export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890 no_proxy=127.0.0.1,localhost,::1"
+alias unproxy="unset http_proxy https_proxy no_proxy"
+# homebrew
+alias brew_UG="brew update && brew upgrade"
+# simple http server
+alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1" # local
+alias php_HTTP_Server="php -S 0.0.0.0:8000"
+# zsh
+alias source_zshrc="source ~/.zshrc"
+# git
+alias git="LANG=\"en_US.UTF-8\" git"
+alias git_delete_gone_branches="git branch -vv | grep ': gone]' | awk '{ print \$1; }' | xargs git branch -D"
+# docker
+alias dkr="docker"
+alias dkrc="docker-compose"
+alias dkri="docker images"
+# kubectl
+alias k="kubectl"
+alias kpoa="k get po -A --sort-by=.metadata.namespace"
+alias kpo="k get po"
+# flutter
+alias flutter="~/flutter/bin/flutter"
+# pnpm
+alias pn="pnpm"
+# minikube
+alias mk="minikube"
+```
 
-- Theme
+#### Theme
 
-  <https://github.com/romkatv/powerlevel10k>
+<https://github.com/romkatv/powerlevel10k>
 
-- Plugins
+#### Plugins
 
-  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ### spacemacs
 
