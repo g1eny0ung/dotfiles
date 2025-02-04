@@ -131,8 +131,7 @@ alias unproxy="unset http_proxy https_proxy no_proxy"
 # homebrew
 alias brew_UG="brew update && brew upgrade"
 # simple http server
-alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1" # local
-alias php_HTTP_Server="php -S 0.0.0.0:8000"
+alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 # zsh
 alias source_zshrc="source ~/.zshrc"
 # git
