@@ -15,8 +15,10 @@ if [[ $(uname -m) == "arm64" ]]; then
   export PATH=$(brew --prefix)/opt/node@20/bin:$PATH
 fi
 
-# Sqlite3 latest version
+# Sqlite3
 export PATH=$(brew --prefix)/opt/sqlite/bin:$PATH
+# Python3
+export PATH=$(brew --prefix)/opt/python/libexec/bin:$PATH
 # Ruby default
 export PATH=$(brew --prefix)/opt/ruby/bin:$PATH
 export PATH=$(gem env home)/bin:$PATH
@@ -158,6 +160,8 @@ alias flutter="~/flutter/bin/flutter"
 alias pn="pnpm"
 # minikube
 alias mk="minikube"
+# python
+alias python="$(brew --prefix)/bin/python3"
 
 export GPG_TTY=$(tty)
 
