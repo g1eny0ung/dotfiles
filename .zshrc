@@ -28,6 +28,7 @@ export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
 export PATH=$HOME/.pub-cache/bin:$PATH
 # Add home/bin
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -160,19 +161,8 @@ alias flutter="~/flutter/bin/flutter"
 alias pn="pnpm"
 # minikube
 alias mk="minikube"
-# python
-alias python="$(brew --prefix)/bin/python3"
 
 export GPG_TTY=$(tty)
-
-# pyenv and pyenv-virtualenv
-if command -v pyenv &>/dev/null; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH=$PYENV_ROOT/bin:$PATH
-
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
