@@ -72,7 +72,6 @@ This function should only modify configuration layer settings."
               clojure-backend 'cider
               clojure-enable-fancify-symbols t
               clojure-enable-linters 'clj-kondo)
-     lua
 
      treemacs)
 
