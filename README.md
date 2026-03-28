@@ -8,7 +8,6 @@ This repo includes my dotfiles. 😃
 - [spacemacs](#spacemacs)
 - [neovim](#neovim)
 - [prettier](#prettier)
-- [ideavim](#ideavim)
 
 ## How to use
 
@@ -22,8 +21,8 @@ sudo ln -s /path/to/dotfiles/.zshrc ~/.zshrc
 
 ### zsh (oh-my-zsh)
 
-> For Warp users, you can use `.warp.zshrc`, which removes the custom theme and
-> plugins because Warp has already provided them.
+> For Warp users, you can use `.warp.zshrc`, which removes the custom theme and plugins
+> because Warp has already provided them.
 
 #### PATH
 
@@ -76,10 +75,6 @@ alias pn="pnpm"
 alias mk="minikube"
 ```
 
-#### Theme
-
-<https://github.com/romkatv/powerlevel10k>
-
 #### Plugins
 
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
@@ -119,18 +114,6 @@ Plug 'editorconfig/editorconfig-vim'
 ### Prettier
 
 [Prettier](https://prettier.io/) is an opinionated code formatter.
-
-### ideavim
-
-```vimrc
-inoremap jk <Esc>
-vnoremap jk <Esc>
-
-set clipboard^=unnamed
-set relativenumber
-
-set surround
-```
 
 ## License
 
