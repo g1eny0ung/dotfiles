@@ -2,7 +2,6 @@
 
 .config
 !.config/nvim
-.config/nvim/.netrwhist
 
 .spacemacs.d/.spacemacs.env
 .spacemacs.d/custom.el

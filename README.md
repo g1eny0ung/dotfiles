@@ -21,7 +21,7 @@ sudo ln -s /path/to/dotfiles/.zshrc ~/.zshrc
 
 ### zsh (oh-my-zsh)
 
-> For Warp users, you can use `.warp.zshrc`, which removes the custom theme and plugins
+> For Warp users, you can use `.warp.zshrc`, which removes the custom plugins
 > because Warp has already provided them.
 
 #### PATH
@@ -93,7 +93,7 @@ Summary:
 
 > Make sure you have already installed [vim-plug](https://github.com/junegunn/vim-plug).
 
-Only basic configurations there. Just for editing some configuration-like files.
+Only basic configurations there. I use it for editing some configuration-like files.
 
 Summary:
 
