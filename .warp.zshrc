@@ -132,7 +132,7 @@ alias vim="nvim"
 alias clashxproxy="export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890 no_proxy=127.0.0.1,localhost,::1"
 alias unproxy="unset http_proxy https_proxy no_proxy"
 # homebrew
-alias brew_UG="brew update && brew upgrade"
+alias brew_UG="brew up && brew upgrade -y"
 # simple http server
 alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 # zsh
