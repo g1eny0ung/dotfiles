@@ -19,6 +19,8 @@ export PATH=$(gem env home)/bin:$PATH
 export PATH=$(brew --prefix)/opt/openjdk/bin:$PATH
 # Pub
 export PATH=$HOME/.pub-cache/bin:$PATH
+# Bun
+export PATH="$HOME/.bun/bin:$PATH"
 # Add home/bin
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
