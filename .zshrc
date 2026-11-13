@@ -139,7 +139,6 @@ alias py_HTTP_Server="python3 -m http.server --bind 127.0.0.1"
 alias source_zshrc="source ~/.zshrc"
 # git
 alias git="LANG=\"en_US.UTF-8\" git"
-alias git_delete_gone_branches="git branch -vv | grep ': gone]' | awk '{ print \$1; }' | xargs git branch -D"
 # docker
 alias dkr="docker"
 alias dkrc="docker-compose"
